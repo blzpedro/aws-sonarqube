@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Test = () => {
     return ( 
-        <div data-testid={'test'}>Test</div>
+        <>
+            <div className="mo" data-testid="test">EU TE AMO</div>
+        </>
     );
 }

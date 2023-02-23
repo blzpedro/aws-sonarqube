@@ -3,9 +3,15 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - yarn config set cache-folder /root/.yarn-cache
-      - yarn install --frozen-lockfile --silent
+      - echo Instalando dependencias...
+      - yarn
   build:
     commands:
+      - echo Testes
       - yarn test
+      - echo Buildando
       - yarn build
+artifacts:
+  files: "**/*"
+  discard-paths: no
+  base-directory: dist
