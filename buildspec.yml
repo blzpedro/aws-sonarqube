@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - yarn config set cache-folder /root/.yarn-cache
+      - yarn install --frozen-lockfile --silent
+  build:
+    commands:
+      - yarn test
+      - yarn build

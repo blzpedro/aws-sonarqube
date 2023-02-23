@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest --watch --coverage"
+    "test:w": "jest --watch --coverage",
+    "test": "jest"
   },
   "dependencies": {
     "react": "^18.2.0",
